@@ -11,7 +11,18 @@
 
 </head>
 <body>
+    <nav class="navbar navbar-expand navbar-light bg-light container mb-4 mt-2">
+        <div class="nav navbar-nav d-flex ">
+            <div class="left">
+                <a class="nav-item nav-link active" href="#">Home </a>
+                <a class="nav-item nav-link" href="#">Kitob qidirish</a>
+                <a class="nav-item nav-link" href="#">Post qo'shish</a>
+
     
+            </div>
+            <a href="{% url 'user_profile' %}">Profile</a>
+        </div>
+    </nav>
     {% block content %}
       
     {% endblock content %}
